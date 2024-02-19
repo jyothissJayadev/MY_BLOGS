@@ -1,0 +1,226 @@
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:linear-gradient(89.97deg, #131f30 1.84%, #000000 102.67%);
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.topLeft {
+  display: flex;
+}
+
+.hamburger {
+  color: white;
+  font-size: 24px;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.hamburger:hover {
+  color: gray;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: linear-gradient(89.97deg, #131f30 1.84%, #000000 102.67%);
+  padding: 10px;
+  width: 200px;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  z-index: 999;
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItem {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+.menuItem:hover {
+  background-color: rgb(23, 57, 161);
+}
+
+.redhover:hover {
+  background-color: rgb(161, 23, 55);
+}
+
+.greenhover:hover {
+  background-color: rgb(23, 161, 122);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.topCenter {
+  flex: 1;
+  text-align: center;
+}
+
+.topList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.topListItem {
+  margin-right: 50px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s ease;
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+.topListItem:hover {
+  background-color: rgb(23, 57, 161);
+}
+
+.topRight {
+  display: flex;
+  align-items: center;
+}
+
+.topImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.topImg:hover {
+  opacity: 0.8;
+}
+
+.topSearchIcon {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-left: 10px;
+}
+
+.topSearchIcon:hover {
+  color: gray;
+}
+
+@media (max-width: 1000px) {
+  .topLeft,
+  .topCenter,
+  .topRight {
+    display: none;
+  }
+  
+  .top {
+    justify-content: flex-start;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: linear-gradient(89.97deg, #131f30 1.84%, #000000 102.67%);
+    padding: 10px;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: 999;
+  }
+
+  .menuList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menuItem {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    padding: 8px 14px;
+    border-radius: 20px;
+  }
+
+  .menuItem:hover {
+    background-color: rgb(23, 57, 161);
+  }
+
+  
+
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+/* ... */
+
+@media (max-width: 1000px) {
+  .topLeft {
+    display: flex;
+  }
+
+  .hamburger {
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .hamburger:hover {
+    color: gray;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: 999;
+  }
+
+  /* ... */
+}
+
+.redhover:hover {
+  background-color: rgb(161, 23, 55);
+}
+
+.greenhover:hover {
+  background-color: rgb(23, 161, 122);
+}
